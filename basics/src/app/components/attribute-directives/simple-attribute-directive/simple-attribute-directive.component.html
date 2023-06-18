@@ -1,0 +1,4 @@
+<button class="btn btn-primary mb-1" (click)="switchOnBackgroundColor()">set background color</button>
+<p [ngStyle]="{backgroundColor : onOff == true ? 'red' : 'green'}">simple-style attribute-directive works!</p>
+<button class="btn btn-primary mb-1" (click)="switchTextColor()">set text color</button>
+<p [ngClass]="{'text-color': textColor}">simple-class-directive works!</p>

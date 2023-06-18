@@ -1,0 +1,84 @@
+<ul>
+  <p><strong>There are four forms of databinding</strong></p>
+  <li>
+    String interpolation:
+  </li>
+  <li>
+    Property binding
+  </li>
+  <li>
+    Two way binding
+  </li>
+  <li>
+    Event binding
+  </li>
+</ul>
+<hr>
+<ul>
+  <li>
+    <p><strong>This is an example of native property binding</strong></p>
+    <app-property-binding></app-property-binding>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of custom property binding</strong></p>
+    <app-custom-property-binding></app-custom-property-binding>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of two way binding</strong></p>
+    <app-two-way-binding></app-two-way-binding>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of string interpolation</strong></p>
+    <app-string-interpolation></app-string-interpolation>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of simple attribute directives</strong></p>
+    <app-simple-attribute-directive></app-simple-attribute-directive>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of using a local reference</strong></p>
+    <app-local-references (firstEventEmitter)="setFirstParentVariable($event)" (secondEventEmitter)="setSecondParentVariable($event)"></app-local-references>
+    <P>This is what is typed in the input: <strong>{{ fromChild }}</strong></P>
+    <P>This is what is typed in the second input: <strong>{{ fromChildTwo }}</strong></P>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of using ng-content</strong></p>
+    <app-ng-content>
+      <p>This text is rendered in the ng-component</p>
+    </app-ng-content>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of using content-child</strong></p>
+    <app-content-child>
+      <p #contentOfParagraph> {{ title }}</p>
+    </app-content-child>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of an attribute directive</strong></p>
+    <app-test-component></app-test-component>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of a host listener directive</strong></p>
+    <app-second-test></app-second-test>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of a host binding directive</strong></p>
+    <app-third-test ></app-third-test>
+  </li>
+  <hr>
+  <li>
+    <p><strong>This is an example of a self made structural directive</strong></p>
+    <app-fourth-test ></app-fourth-test>
+  </li> 
+  <hr>
+</ul>

@@ -1,0 +1,7 @@
+
+<!-- //the old way
+<input #myTitle (keyup)="keyup(myTitle.value)">
+<h2>{{ text }}</h2> -->
+
+<input [(ngModel)]="text">
+<h2>{{ text }}</h2>

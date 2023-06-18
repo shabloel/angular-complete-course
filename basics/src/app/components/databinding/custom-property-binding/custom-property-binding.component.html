@@ -1,0 +1,10 @@
+<ul>
+  <li>
+    <p> parent to child </p>
+    <app-custom-property-binding-child [childProperty]="parentVariable" (childOutput)="processChildVariable($event)"></app-custom-property-binding-child>
+  </li>
+  <li>
+    <p> child to parent </p>
+    <p> This is the variable from the child: <strong>{{ variableSetByChild }}</strong></p>
+  </li>
+</ul>
